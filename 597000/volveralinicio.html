@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <style>
+		.alto {
+		  width: 100px;
+		  height: 1000px;
+		}
+
+		.amarillo {
+		  background-color: yellow;
+		}
+
+		.azul {
+		  background-color: blue;
+		}
+	</style>
+	<script>
+		window.onload = function() {
+		  fecha = new Date();
+		  console.log("hola mundo", fecha);
+		  window.scrollTo({top: 0, behavior: 'smooth'});
+		  console.log("hecho");
+		}
+	</script>
+  </head>
+  <body>
+    <div class="alto amarillo"></div>
+	<div class="alto azul"></div>
+  </body>
+</html>
