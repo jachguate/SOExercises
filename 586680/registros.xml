@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="registros.xsl" type="text/xsl"?>
+<records>
+  <rec id="1">
+    <origenid>108801</origenid>
+    <destinoid>1088013</destinoid>
+    <traza>L03</traza>
+    <treevision>X589</treevision>
+    <nespacios>5</nespacios>
+  </rec>
+  <rec id="2">
+    <origenid>108802</origenid>
+    <destinoid>1088014</destinoid>
+    <traza>L02</traza>
+    <treevision>X540</treevision>
+    <nespacios>5</nespacios>
+  </rec>
+  <rec id="3">
+    <origenid>108804</origenid>
+    <destinoid>1088015</destinoid>
+    <traza>L01</traza>
+    <treevision>&#160;&#160;&#160;&#160;*T5892*</treevision>
+    <nespacios>10</nespacios>
+  </rec>
+</records>
