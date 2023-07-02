@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='es'>
+ <head>
+  <title>Ejemplo acordion</title>
+  <meta charset='utf-8'>
+ </head>
+ <body>
+    <div>
+      <div class="ajudadiv">
+        <h3>Información 1</h3>
+        <div id="Informacion1" style="display: none;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat
+        </div>
+      </div>
+      <div class="ajudadiv">
+        <h3>Información 2</h3>
+        <div id="Informacion2" style="display: none;">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse 
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+          cupidatat non proident, sunt in culpa qui officia deserunt 
+          mollit anim id est laborum
+        </div>
+      </div>
+      <div class="ajudadiv">
+        <h3>Información 3</h3>
+        <div id="Informacion3" style="display: none;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat
+        </div>
+      </div>
+    </div>
+    <script>
+      let ultimoAbierto;
+
+      function desplegarMenu(evento) {
+        if (typeof ultimoAbierto !== 'undefined') {
+          ultimoAbierto.style.display = "none";
+        }
+        let titulo = this.firstElementChild;
+        let info = titulo.nextElementSibling;
+        info.style.display = "block";
+        ultimoAbierto = info;
+      }
+
+      let desplegables = document.querySelectorAll('.ajudadiv');
+
+      desplegables.forEach((item) => {
+        item.addEventListener('click', desplegarMenu)
+      })  
+    </script>
+ </body>
+</html>
